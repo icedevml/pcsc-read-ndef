@@ -23,6 +23,8 @@ def parse_data(data):
 
         if tag == b"\x00":
             # NULL TLV reached
+            continue
+        elif tag == b"\xFE":
             break
         elif tag == b"\x03":
             # NDEF Message TLV reached
@@ -77,6 +79,7 @@ def read_ndef(conn):
     for i in range(1, total_quads + 1):
         content += send_command(conn, b"\xFF\xEF\x00\x00\x02\x30" + bytes([4 * i]))
 
+    print(content)
     # parse TLV
     data = b"".join(parse_data(content))
 
