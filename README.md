@@ -1,8 +1,10 @@
-# Read NDEF from NTAG 21x
+# Read NDEF using PC/SC reader
 
-**Compatible tags:** NTAG 213, NTAG 215, NTAG 216.
+**Compatible tags:** NTAG® 213, NTAG® 215, NTAG® 216.
 
 **Compatible readers:** Identiv uTrust 3700F, 3720F. Other similiar readers from Identiv/SCM Microsystems might also work.
+
+*Note:* NTAG - is a trademark of NXP B.V. uTrust - is a trademark of Identiv Inc. This project is not affiliated with NXP nor Identiv.
 
 ## Usage
 
